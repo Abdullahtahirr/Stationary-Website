@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assest/css/style.css">
+  <!-- <link rel="stylesheet" href="assest/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="assest/css/theme.css">
+
+
+</head>
+
+<body>
+  <header>
+    <!-- navbar -->
+
+    <div class="navbar-sticky bg-light">
+      <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand d-none d-sm-block me-3 flex-shrink-0" href="index.html"><img src="assest/logo.png" width="100"
+            alt="Stationary" /></a><a
+            class="navbar-brand d-sm-none me-2" href="index.html"><img src="assest/logo.png" width="75"
+              alt="Stationary" /></a>
+          <!-- Search-->
+          <div class="collapse navbar-collapse mx-auto" >
+            
+            <!-- Departments menu-->
+          
+            <!-- Primary menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="account.html" data-bs-auto-close="outside">Account</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside">Pages</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact US</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="services.html">Services</a>
+                  </li>
+              
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="compare.html"> Compare Products</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Toolbar-->
+          <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span></button>
+              <a class="navbar-tool navbar-stuck-toggler"
+              href="#"><span class="navbar-tool-tooltip">Toggle menu</span>
+              <div class="navbar-tool-icon-box">
+                <i class="navbar-tool-icon ci-menu"></i>
+              </div>
+            </a><a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="#signin-modal" data-bs-toggle="modal">
+              <div class="navbar-tool-icon-box">
+                <i class="navbar-tool-icon fa fa-user"></i>
+              </div>
+              <div class="navbar-tool-text ms-n3">
+                <small class="username">Hello, Sign in</small>My Account
+              </div>
+            </a>
+            <div class="navbar-tool ms-3">
+              <a class="navbar-tool-icon-box bg-secondary cart" href="shop-cart.html"><span
+                  class="navbar-tool-label">0</span><i class="navbar-tool-icon fa fa-shopping-cart"></i></a><a
+                class="navbar-tool-text" href="shop-cart.html"><small>My Cart</small><h3 id="totpri" class="fs-sm"></h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    
+    <!-- navbar end -->
+    <!--toogle Primary menu-->
+    <div class="collapse navbar-collapse mx-auto" id="navbarCollapse">
+            
+     
+    
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="account.html" data-bs-auto-close="outside">Account</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside">Pages</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="about.html">About Us</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="contact.html">Contact US</a>
+            </li>
+            <li>
+              <a class="dropdown-item " href="services.html">Services</a>
+            </li>
+         
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="compare.html"> Compare Products</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </header>
+  <!-- compare product heading -->
+  <div class="bg-secondary py-4 mt-5">
+    <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+      <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
+            <li class="breadcrumb-item">
+              <a class="text-nowrap" href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item text-nowrap" aria-current="page">
+              <i class="fa fa-arrow-right"></i> &nbsp; Compare products
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+        <h1 class="h3 mb-0">Compare Products</h1>
+      </div>
+    </div>
+  </div>
+  <!-- compare product heading -->
+  <div class="py-4 mt-5 container row">
+    <div class="col-6 mx-auto table-responsive mb-3">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 mx-auto table-responsive mb-3">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- fotter section -->
+
+    <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" required />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Universal Stationary</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    
+  
+  <!-- End of .container -->
+  <script src="assest/js/app.js"></script>
+  <script src="assest/fontawesome/js/all.js"></script>
+
+  <script src="assest/js/bootstrap.js"></script>
+</body>
+
+</html>
+<script src="products.js"></script>
+<script>
+for (let i = 1; i < products.length; i++) {
+  
+  document.getElementById('select-1').innerHTML +=`
+  
+  <option value="${i}">${products[i].Name}</option>
+  
+  ` ;
+  document.getElementById('select-2').innerHTML +=`
+  
+  <option value="${i}">${products[i].Name}</option>
+  
+  ` ;
+}
+function item1(a) {
+document.getElementById('img-1').src = products[a].img;
+document.getElementById('pname-1').textContent = products[a].Name;
+document.getElementById('b-1').textContent = products[a].Brand;
+document.getElementById('cat-1').textContent = products[a].Category;
+document.getElementById('rat-1').innerHTML = products[a].Ratting;
+document.getElementById('p-1').textContent = '$' + products[a].cartPrice;
+
+
+}
+function item2(a) {
+  document.getElementById('img-2').src = products[a].img;
+  document.getElementById('pname-2').textContent = products[a].Name;
+  document.getElementById('b-2').textContent = products[a].Brand;
+  document.getElementById('cat-2').textContent = products[a].Category;
+  document.getElementById('rat-2').innerHTML = products[a].Ratting;
+  document.getElementById('p-2').innerHTML = '$' + products[a].cartPrice;
+}
+
+    let myCost = localStorage.getItem('totalCost');
+    let price = document.getElementById('totpri');
+    let check = price.innerText = '$' + myCost;
+
+
+</script>

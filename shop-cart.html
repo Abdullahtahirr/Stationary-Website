@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assest/css/style.css" />
+    <link rel="stylesheet" href="assest/css/theme.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar -->
+  
+      <div class="navbar-sticky bg-light">
+        <div class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand d-none d-sm-block me-3 flex-shrink-0" href="index.html"><img src="assest/logo.png" width="100"
+              alt="Stationary" /></a><a
+              class="navbar-brand d-sm-none me-2" href="index.html"><img src="assest/logo.png" width="75"
+                alt="Stationary" /></a>
+            <!-- Search-->
+            <div class="collapse navbar-collapse mx-auto" >
+              
+              <!-- Departments menu-->
+            
+              <!-- Primary menu-->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="account.html" data-bs-auto-close="outside">Account</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="contact.html">Contact US</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="services.html">Services</a>
+                    </li>
+                
+                  </ul>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="compare.html"> Compare Products</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Toolbar-->
+            <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-tool navbar-stuck-toggler"
+                href="#"><span class="navbar-tool-tooltip">Toggle menu</span>
+                <div class="navbar-tool-icon-box">
+                  <i class="navbar-tool-icon ci-menu"></i>
+                </div>
+              </a><a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="#signin-modal" data-bs-toggle="modal">
+                <div class="navbar-tool-icon-box">
+                  <i class="navbar-tool-icon fa fa-user"></i>
+                </div>
+                <div class="navbar-tool-text ms-n3">
+                  <small class="username">Hello, Sign in</small>My Account
+                </div>
+              </a>
+              <div class="navbar-tool ms-3">
+                <a class="navbar-tool-icon-box bg-secondary cart" href="shopping-cart.html"><span
+                    class="navbar-tool-label">0</span><i class="text-danger navbar-tool-icon fa fa-shopping-cart"></i></a><a
+                  class="navbar-tool-text" href="shop-cart.html"><small>My Cart</small><h3 id="totpri" class="fs-sm"></h3></a>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      
+      <!-- navbar end -->
+      <!--toogle Primary menu-->
+      <div class="collapse navbar-collapse mx-auto" id="navbarCollapse">
+              
+       
+      
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html" data-bs-auto-close="outside">Account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside">Pages</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="about.html">About Us</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="contact.html">Contact US</a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="services.html">Services</a>
+              </li>
+           
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="compare.html"> Compare Products</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </header>
+    <!-- Cart Section -->
+<div class="bg-secondary py-4 ">
+  <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+    <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
+          <li class="breadcrumb-item">
+            <a class="text-nowrap" href="index.html">Home</a>
+          </li>
+          
+          <li class="breadcrumb-item text-nowrap" aria-current="page">
+            <i class="fa fa-arrow-right"></i> &nbsp;My Cart
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+      <h1 class="h3 mb-0">Shopping Cart</h1>
+    </div>
+  </div>
+</div>
+    <!-- shopping-cart -->
+    <section class="h-100% ">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12">
+            <div
+              class="card card-registration card-registration-2"
+              style="border-radius: 15px"
+            >
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <div class="p-5">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-5"
+                      >
+                        <h2 >Cart Items</h2>
+                        <h6 class="mb-0 text-muted carttotitem"></h6>
+                      </div>
+
+                      <div class="productContainer"></div>
+
+                      <div class="pt-5">
+                        <h6 class="mb-0">
+                          <a href="#!" class="text-body"
+                            ><i class="fa fa-right-arrow-alt-left me-2"></i>Back
+                            to shop</a
+                          >
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 bg-grey">
+                    <div class="p-5">
+                      <h2>Summary</h2>
+                      <hr class="my-4" />
+
+                      <div class="d-flex justify-content-between mb-4">
+                        <h5 class="text-uppercase cart"><span></span></h5>
+                        <h5>€ 132.00</h5>
+                      </div>
+
+                      <h5 class="text-uppercase mb-3">Shipping</h5>
+
+                      <div class="mb-4 pb-2">
+                        <select class="select form-control">
+                          <option value="1">Standard-Delivery- €5.00</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="4">Four</option>
+                        </select>
+                      </div>
+
+                      <h5 class="text-uppercase mb-3">Give code</h5>
+
+                      <div class="mb-5">
+                        <div class="form-outline">
+                          <input
+                            type="text"
+                            id="form3Examplea2"
+                            class="form-control form-control-lg"
+                          />
+                          <label class="form-label" for="form3Examplea2"
+                            >Enter your code</label
+                          >
+                        </div>
+                      </div>
+
+                      <hr class="my-4" />
+
+                      <div class="d-flex justify-content-between mb-5">
+                        <h5 class="text-uppercase">Total price</h5>
+                        <h5 id="Maintotalprice"></h5>
+                      </div>
+
+                      <button
+                        type="button"
+                        class="btn btn-dark btn-block btn-lg"
+                        data-mdb-ripple-color="dark"
+                      >
+                        Check Out
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="assest/js/app.js"></script>
+    <script src="assest/fontawesome/js/all.js"></script>
+    <!-- <script src="assest/js/bootstrap.js"></script> -->
+    <script>
+        let myCost = localStorage.getItem('totalCost');
+    let price = document.getElementById('totpri');
+    let totprice = document.getElementById('Maintotalprice');
+    price.innerText = '$' + myCost;
+    totprice.textContent = '$' + myCost;
+    </script>
+  </body>
+</html>

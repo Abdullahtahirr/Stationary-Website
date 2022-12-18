@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assest/css/style.css">
+  <link rel="stylesheet" href="assest/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="assest/css/theme.css"> -->
+
+
+</head>
+
+<body>
+  <header>
+    <!-- navbar -->
+
+    <div class="navbar-sticky bg-light">
+      <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand d-none d-sm-block me-3 flex-shrink-0" href="index.html"><img src="assest/logo.png" width="100"
+            alt="Stationary" /></a><a
+            class="navbar-brand d-sm-none me-2" href="index.html"><img src="assest/logo.png" width="75"
+              alt="Stationary" /></a>
+          <!-- Search-->
+          <div class="collapse navbar-collapse mx-auto" >
+            
+            <!-- Departments menu-->
+          
+            <!-- Primary menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="account.html" data-bs-auto-close="outside">Account</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside">Pages</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact US</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="services.html">Services</a>
+                  </li>
+                 
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="compare.html"> Compare Products</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Toolbar-->
+          <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span></button>
+              <a class="navbar-tool navbar-stuck-toggler"
+              href="#"><span class="navbar-tool-tooltip">Toggle menu</span>
+              <div class="navbar-tool-icon-box">
+                <i class="navbar-tool-icon ci-menu"></i>
+              </div>
+            </a><a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="#signin-modal" data-bs-toggle="modal">
+              <div class="navbar-tool-icon-box">
+                <i class="navbar-tool-icon fa fa-user"></i>
+              </div>
+              <div class="navbar-tool-text ms-n3">
+                <small class="username">Hello, Sign in</small>My Account
+              </div>
+            </a>
+            <div class="navbar-tool ms-3">
+              <a class="navbar-tool-icon-box bg-secondary cart" href="shop-cart.html"><span
+                  class="navbar-tool-label">0</span><i class="navbar-tool-icon fa fa-shopping-cart"></i></a><a
+                class="navbar-tool-text" href="shop-cart.html"><small>My Cart</small><h3 id="totpri" class="fs-sm"></h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    
+    <!-- navbar end -->
+    <!--toogle Primary menu-->
+    <div class="collapse navbar-collapse mx-auto" id="navbarCollapse">
+            
+     
+    
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="account.html" data-bs-auto-close="outside">Account</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside">Pages</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="about.html">About Us</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="contact.html">Contact US</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="services.html">Services</a>
+            </li>
+          
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="compare.html"> Compare Products</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </header>
+  <!-- Accout Section -->
+<div class="bg-secondary py-4 ">
+  <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+    <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
+          <li class="breadcrumb-item">
+            <a class="text-nowrap" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item text-nowrap" aria-current="page">
+            <i class="fa fa-arrow-right"></i> &nbsp; Account
+          </li>
+         
+        </ol>
+      </nav>
+    </div>
+    <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+      <h1 class="h3 mb-0">Accounts</h1>
+    </div>
+  </div>
+</div>
+  <!-- login Signup section -->
+  <section class="vh-100" id="login-form" style="display: none">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="assest/images/account-img.webp"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form>
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+              <h2 class="fw-normal mb-4 me-3">Sign In</h2>
+            </div>  
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">Email address</label>
+              <input type="email" id="form3Example3" class="form-control form-control-lg"
+                placeholder="Enter a valid email address" />
+                
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="form3Example4" class="form-control form-control-lg"
+                placeholder="Enter password" />
+              <label class="form-label" for="form3Example4">Password</label>
+            </div>
+  
+           
+  
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                  class="link-danger" onclick="signupform();">Register</a></p>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section class="vh-100" id="signup-form" >
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form>
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+              <h2 class="fw-normal mb-4 me-3">Sign Up</h2>
+             
+            </div>
+  
+          
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">Name</label>
+              <input type="text" id="user" class="form-control form-control-lg"
+                placeholder="Enter your name" />
+                <span id="usererror" style="color: red;"></span>
+            </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">Email address</label>
+              <input type="email" id="email" class="form-control form-control-lg"
+                placeholder="Enter a valid email address" />
+                <span id="emailerror" style="color: red;"></span>
+            </div>
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">Password</label>
+              <input type="password" id="password" class="form-control form-control-lg"
+                placeholder="Enter a Password" />
+                <span id="passerror"style="color: red;"></span>
+            </div>
+  
+            <!-- comform Password input -->
+            <div class="form-outline mb-3">
+              <label class="form-label" for="form3Example4">Conform Password</label>
+              <input type="password" id="cpassword" class="form-control form-control-lg"
+                placeholder="Conform password" />
+                <span id="confirmerror" style="color: red;"></span>
+            </div>
+  
+           
+  
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="validation()">Register</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                  class="link-danger" onclick="loginform();">Login</a></p>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" required />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Universal Stationary</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script src="assest/js/app.js"></script>
+  <script src="assest/fontawesome/js/all.js"></script>
+  <script src="assest/js/bootstrap.js"></script>
+  <script>
+    function validation()
+    {
+     //----Varaible declare to get values from text boxes
+     var u = document.getElementById("user").value;
+     var e = document.getElementById("email").value;
+     var p = document.getElementById("password").value;
+     var cp = document.getElementById("cpassword").value;
+     
+     // Creation of regular expressions0----
+     var usercheck = /^[a-zA-Z. ]{3,30}$/;
+     var passcheck = /^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*?])[a-zA-Z\d~!@#$%^&*?]{6,}$/;
+     var emailcheck = /^[A-Za-z_\d]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+   
+
+
+// checking username 
+if(usercheck.test(u)) 
+{
+  document.getElementById("usererror").innerHTML = "";
+}
+else  if(u == '') 
+{
+  document.getElementById("usererror").innerHTML = "Enter your name";
+}
+else
+{
+  document.getElementById("usererror").innerHTML = "Are you sure that you've entered your name correctly?";
+  return false;
+}
+// checking email 
+if(e == '') 
+{
+  document.getElementById("emailerror").innerHTML = "Enter an email";
+}
+else if(emailcheck.test(e)) 
+{
+ document.getElementById("emailerror").innerHTML = "";
+}
+else
+{
+ document.getElementById("emailerror").innerHTML = " Sorry, only letters (a-z), numbers (0-9), and periods (.) are allowed.";
+ return false;
+}
+// checking Password 
+if(p == '') 
+{
+  document.getElementById("passerror").innerHTML = "Enter a password";
+}
+else if(passcheck.test(p)) 
+{
+  document.getElementById("passerror").innerHTML = "";
+}
+else
+{
+ document.getElementById("passerror").innerHTML = " Please choose a stronger password. Try a mix of letters, numbers and symbols.";
+ return false;
+}
+// checking conform password 
+
+if(cp.match(p)) 
+{
+ document.getElementById("confirmerror").innerHTML = "";
+}
+else
+{
+ document.getElementById("confirmerror").innerHTML = "Those passwords didn’t match. Try again.";
+ return false;
+
+}
+alert("Your Valuable feedback submitted successfully")
+
+    }
+  
+   
+    let myCost = localStorage.getItem('totalCost');
+    let price = document.getElementById('totpri');
+    let check = price.innerText = '$' + myCost;
+   
+
+  
+
+    function signupform() { 
+      var signup = document.getElementById('signup-form');
+      var login = document.getElementById('login-form');
+        signup.style.display = "flex";
+        login.style.display = "none";
+     }
+    function loginform() { 
+     var login = document.getElementById('login-form');
+     var signup = document.getElementById('signup-form');
+     signup.style.display = "none";
+     login.style.display = "flex";
+     }
+  </script>
+</body>
+
+</html>
